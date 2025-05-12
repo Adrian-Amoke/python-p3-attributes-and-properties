@@ -32,6 +32,7 @@ class Person:
             self._name = value.title()
         else:
             print("Name must be string between 1 and 25 characters.")
+            self._name = ""
 
     @property
     def job(self) -> str:
@@ -43,3 +44,4 @@ class Person:
             self._job = value
         else:
             print("Job must be in list of approved jobs.")
+            self._job = ""
